@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Library</title>
+        <link rel="stylesheet" href="style.css" type="text/css">
+    </head>
+    <body> 
+            <!-- heading -->
+            <div id="headDiv">
+                <div id="addBook"><p>Add Book</p></div>
+                <h1 id="heading">Jia's Library</h1>
+            </div>
+            <!-- content -->
+            <div id="bodyDiv">
+            </div>
+            <!-- modal and form elements *hidden-->
+            <div id="modal">
+            </div>
+            <div id="formDiv">
+                <form>
+                    <h1 id="formHeading">Add a book to the Library</h1>
+                    <div id="titleDiv">
+                        <label for="ftitle">Title:</label>
+                        <input id="ftitle" type="text">
+                    </div>
+                    <div id="authorDiv">
+                        <label for="fauthor">Author:</label>
+                        <input id="fauthor" type="text">
+                    </div>
+                    <div id="pagesDiv">
+                        <label for="fpages">Pages:</label>
+                        <input id="fpages" type="number">
+                    </div>
+                    <div id="readDiv">
+                        <label for="read">read</label>
+                        <input id="read" type="radio" name="readOption" value="read">
+                        <label for="notread">not read</label>
+                        <input id="notread" type="radio" name="readOption" value="not read" checked>
+                    </div>
+                    <div id="buttons">
+                        <div id="submit"><p>Submit</p></div>
+                        <div id="cancel"><p>Cancel</p></div>
+                    </div>
+                </form>
+            </div>
+        <script type="text/javascript" src="script.js"></script>
+    </body>
+</html>
