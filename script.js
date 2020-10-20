@@ -1,19 +1,19 @@
 //global variables/constants/constructors
 let myLibrary = [];
 let readBtns = [];
-let Book = function() {
-    this.title;
-    this.author;
-    this.pages;
-    this.read;
+class Book {
+    constructor(title, author, pages, read) {
+        this.title = "N/A";
+        this.author = "N/A";
+        this.pages = "N/A";
+        this.read = "not read";
+    }
+    info() {
+        let inf = this.title + " by " + this.author + ", " + this.pages + " pages " + this.read;
+        return inf;
+    }
 }
-Book.prototype.info = function() {
-    return `${title} by ${author}, ${pages} pages, ${read}`;
-}
-Book.prototype.title = "N/A";
-Book.prototype.author = "N/A";
-Book.prototype.pages = "N/A";
-Book.prototype.read = "not read";
+
 const head = document.querySelector("#headDiv");
 const body = document.querySelector("#bodyDiv");
 const addBook = document.querySelector("#addBook");
